@@ -1,0 +1,8 @@
+.inputSSS {
+  display: none;
+}
+
+.span {
+  @apply bg-white rounded-lg h-2 my-4;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}

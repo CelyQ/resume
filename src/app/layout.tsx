@@ -7,6 +7,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <title>Paul Opmann</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
         <div className="flex justify-center items-center">
