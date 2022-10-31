@@ -1,3 +1,5 @@
+'use client'
+
 import { useLayout } from '../../hooks'
 import { MobileHeader, DesktopHeader } from './'
 
