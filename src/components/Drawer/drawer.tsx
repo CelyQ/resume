@@ -5,10 +5,12 @@ import classNames from 'classnames'
 import { drawerStateAtom } from 'src/app/atoms'
 import { Menu } from '@components/Menu'
 import { useLayout } from '@hooks'
+import useScrollLock from '@hooks/useLockScroll'
 
 export default function Drawer() {
   const [isOpen, setIsOpen] = useAtom(drawerStateAtom)
   const { isDesktop } = useLayout()
+  useScrollLock(isOpen)
 
   if (isDesktop) return null
 

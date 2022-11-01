@@ -44,6 +44,7 @@ export default function Hamburger() {
         id="check"
         checked={isOpen}
         onChange={toggleDrawer}
+        className="hidden"
       />
       <Span className="bg-orange-400 rounded-lg h-1 my-1 w-6/12"></Span>
       <Span className="bg-orange-400 rounded-lg h-1 my-1 w-full"></Span>
