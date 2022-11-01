@@ -31,7 +31,7 @@ export default function Drawer() {
           }
         )}
       >
-        <div className="flex flex-col items-center justify-center h-1/2">
+        <div className="flex flex-col items-center justify-center h-full">
           <Menu vertical />
         </div>
       </div>
