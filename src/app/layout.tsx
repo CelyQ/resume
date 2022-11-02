@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import { Drawer } from '@components/Drawer'
 
 import 'tailwindcss/tailwind.css'
 
@@ -12,10 +11,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <div className="flex justify-center items-center">
-          <div className="max-w-[120rem] h-screen w-full bg-gray-700">
+          <div className="max-w-[120rem] min-h-screen w-full bg-slate-800">
             {children}
           </div>
-          <Drawer />
         </div>
       </body>
     </html>

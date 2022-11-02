@@ -4,8 +4,8 @@ import { useAtom } from 'jotai'
 import classNames from 'classnames'
 import { drawerStateAtom } from 'src/app/atoms'
 import { Menu } from '@components/Menu'
-import { useLayout } from '@hooks'
-import useScrollLock from '@hooks/useLockScroll'
+import { useLayout, useScrollLock } from '@hooks'
+import { Overlay } from '@components/Overlay'
 
 export default function Drawer() {
   const [isOpen, setIsOpen] = useAtom(drawerStateAtom)
@@ -16,18 +16,10 @@ export default function Drawer() {
 
   return (
     <>
+      <Overlay isOpen={isOpen} onClick={() => setIsOpen(false)} />
       <div
         className={classNames(
-          'fixed w-full h-full bg-black/80 top-0 -mr-[2000px]',
-          {
-            '!mr-0': isOpen
-          }
-        )}
-        onClick={() => setIsOpen(false)}
-      />
-      <div
-        className={classNames(
-          'w-2/3 h-screen bg-gray-700 fixed top-0 right-0 transition-[margin] duration-300 -mr-[1000px]',
+          'w-2/3 h-screen bg-slate-800 fixed top-0 right-0 transition-[margin] duration-300 -mr-[1000px]',
           {
             '!mr-0': isOpen
           }
