@@ -3,6 +3,8 @@ import type { ReactNode } from 'react'
 import 'tailwindcss/tailwind.css'
 import 'react-toastify/dist/ReactToastify.css'
 
+import './fonts.scss'
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
