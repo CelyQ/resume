@@ -14,7 +14,8 @@ export default function Warning({ message }: { message: string }) {
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
-          pauseOnHover: false
+          pauseOnHover: false,
+          theme: 'dark'
         })
         .toString()
     }
