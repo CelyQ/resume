@@ -7,7 +7,7 @@ export default function Warning({ message }: { message: string }) {
   useEffect(() => {
     let id: string
 
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV === 'production') {
       id = toast
         .warn(message, {
           position: 'top-right',
