@@ -1,6 +1,7 @@
 import { Drawer } from '@components/Drawer'
 import { Header } from '@components/Header'
 import { Menu } from '@components/Menu'
+import { Warning } from '@components/Warning'
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
           <p className="text-slate-400">I build things for the web.</p>
           <p className="py-2 text-slate-600">
             I’m a full-stack software engineer specializing in building
-            exceptional performant, scalable, and easy-to-maintain digital
+            exceptionally performant, scalable, and easy-to-maintain digital
             experiences.
           </p>
           <button className="py-3 px-6 my-10 text-orange-400 border border-orange-400 rounded-md hover:bg-orange-400/10">
@@ -24,6 +25,7 @@ export default function App() {
         </div>
       </section>
       <Drawer />
+      <Warning message="The website is under construction" />
     </>
   )
 }
