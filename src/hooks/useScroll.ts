@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react'
 
-export default function useScrollDirection() {
+export default function useScroll() {
   const [scrollDir, setScrollDir] = useState<'up' | 'down'>('up')
   const [lastScrollTop, setLastScrollTop] = useState(0)
 
@@ -25,5 +25,8 @@ export default function useScrollDirection() {
     }
   }, [handleScroll, lastScrollTop, scrollDir])
 
-  return scrollDir
+  return {
+    topOffset: lastScrollTop,
+    dirrection: scrollDir
+  }
 }
