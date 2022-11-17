@@ -9,7 +9,7 @@ export default function App() {
       <Header>
         <Menu />
       </Header>
-      <section className="flex flex-col w-full my-[84px] justify-center items-start">
+      <section className="flex flex-col w-full my-[84px] justify-center items-center">
         <div className="py-20 px-10">
           <h6 className="text-lg text-orange-400">Hi, my name is</h6>
           <h2 className="text-4xl text-slate-200 py-2">Paul Opmann.</h2>
@@ -24,6 +24,7 @@ export default function App() {
           </button>
         </div>
       </section>
+      <section className="h-screen"></section>
       <Drawer />
       <Warning message="The website is under construction" />
     </>
