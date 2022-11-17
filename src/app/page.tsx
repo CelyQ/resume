@@ -27,8 +27,8 @@ export default function App() {
           </p>
           <a
             className="inline-block py-3 px-6 my-10 text-orange-400 border border-orange-400 rounded-md hover:bg-orange-400/10"
-            href="./PaulOpmann.pdf"
-            download="PaulOpmann.pdf"
+            href="./paul_opmann.pdf"
+            download="paul_opmann.pdf"
           >
             My Resume
           </a>
