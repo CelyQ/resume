@@ -25,9 +25,13 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
           <span className="text-orange-500">04.</span> Contact
         </li>
         <li className="hover:cursor-pointer hover:text-orange-500 text-slate-400">
-          <button className="border border-orange-500 px-3 py-2 rounded-md text-orange-500 hover:bg-orange-500/5">
+          <a
+            className="inline-block border border-orange-500 px-3 py-2 rounded-md text-orange-500 hover:bg-orange-500/5"
+            href="./PaulOpmann.pdf"
+            download="PaulOpmann.pdf"
+          >
             Resume
-          </button>
+          </a>
         </li>
       </ul>
     </div>

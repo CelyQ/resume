@@ -25,9 +25,13 @@ export default function App() {
             exceptionally performant, scalable, and easy-to-maintain digital
             experiences.
           </p>
-          <button className="py-3 px-6 my-10 text-orange-400 border border-orange-400 rounded-md hover:bg-orange-400/10">
+          <a
+            className="inline-block py-3 px-6 my-10 text-orange-400 border border-orange-400 rounded-md hover:bg-orange-400/10"
+            href="./PaulOpmann.pdf"
+            download="PaulOpmann.pdf"
+          >
             My Resume
-          </button>
+          </a>
         </div>
       </section>
       <section className="h-screen"></section>
