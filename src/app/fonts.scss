@@ -3,3 +3,7 @@
 :root {
   --font-rubik-bubbles: 'Rubik Bubbles', cursive;
 }
+
+div[data-nextjs-scroll-focus-boundary] {
+  display: grid;
+}
