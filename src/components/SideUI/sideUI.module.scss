@@ -1,0 +1,10 @@
+.line {
+  &::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    @apply bg-orange-400 gap-y-5 mt-8;
+  }
+}

@@ -13,7 +13,7 @@ export default function Header({ children }: { children: ReactNode }) {
   return (
     <div
       className={classNames(
-        'fixed top-0 w-full transition-[top] ease-out duration-500',
+        'fixed top-0 w-full transition-[top] ease-out duration-500 z-10',
         {
           '-top-28': dirrection === 'down',
           'bg-slate-800': topOffset > 32

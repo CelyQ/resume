@@ -7,7 +7,7 @@ export function DesktopHeader({ children }: { children: ReactNode }) {
       <div className="px-10 py-6 w-6/12 md:w-1/6 flex items-center justify-start">
         <Logo />
       </div>
-      <div className="px-10 py-6 w-6/12 md:w-5/6 flex items-center justify-end">
+      <div className="px-10 py-6 w-6/12 md:w-5/6 flex items-center justify-end text-sm">
         {children}
       </div>
     </div>
