@@ -17,11 +17,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
       </head>
-      <body>
+      <body className="bg-slate-800">
         <div className="flex justify-center items-center">
-          <div className="min-h-screen h-full w-full bg-slate-800">
-            {children}
-          </div>
+          <div className="min-h-screen h-full w-fulㅣ">{children}</div>
         </div>
       </body>
     </html>

@@ -1,5 +1,6 @@
 'use client'
 
+import { useLayout } from '@hooks'
 import { useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 
@@ -27,5 +28,5 @@ export default function Warning({ message }: { message: string }) {
     }
   }, [message])
 
-  return <ToastContainer newestOnTop />
+  return <ToastContainer newestOnTop style={{ top: '84px' }} />
 }
