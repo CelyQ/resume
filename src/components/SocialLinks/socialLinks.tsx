@@ -1,13 +1,7 @@
-'use client'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Image from 'next/image'
-import { useTheme } from 'next-themes'
 
 export default function SocialLinks() {
-  const { theme } = useTheme()
-
   return (
     <div className="flex flex-col gap-y-5 text-xl h-min text-blue-500 dark:text-orange-400">
       <a

@@ -11,10 +11,11 @@ config.autoAddCss = false
 import { Rubik_Bubbles } from 'next/font/google'
 
 const rubik_bubbles = Rubik_Bubbles({
+  display: 'swap',
   weight: '400',
-  variable: '--font-rubik-bubbles',
-  preload: true,
-  subsets: ['latin']
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--font-rubik-bubbles'
 })
 
 export default function RootLayout({
@@ -23,18 +24,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html suppressHydrationWarning>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.svg" />
-      </head>
-      <body className="bg-gray-50 dark:bg-slate-800">
-        <Providers>
-          <div className="flex justify-center items-center">
-            <div className="h-full">{children}</div>
-          </div>
-        </Providers>
-      </body>
-    </html>
+    <>
+      <style jsx global>{`
+        :root {
+          --font-rubik-bubbles: ${rubik_bubbles.style.fontFamily};
+        }
+      `}</style>
+      <html suppressHydrationWarning>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/logo.svg" />
+        </head>
+        <body className="bg-gray-50 dark:bg-slate-800 font-rubik">
+          <Providers>
+            <div className="flex justify-center items-center">
+              <div className="h-full">{children}</div>
+            </div>
+          </Providers>
+        </body>
+      </html>
+    </>
   )
 }
