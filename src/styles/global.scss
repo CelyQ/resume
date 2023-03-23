@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~react-toastify/dist/ReactToastify.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+:root {
+  --font-rubik-bubbles: 'Rubik Bubbles', cursive;
+}
+
+body {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+
+    &-track {
+      background: #1e293b;
+    }
+
+    &-thumb {
+      background: #f97316;
+    }
+  }
+}
+
+html.light {
+  & body {
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 0.25rem;
+
+      &-track {
+        background: #1e293b;
+      }
+
+      &-thumb {
+        background: #3b82f6;
+      }
+    }
+  }
+}
+
+a[href='mailto:paul.opmann@gmail.com'] {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}

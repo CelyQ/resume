@@ -1,13 +1,12 @@
-import type { ReactNode } from 'react'
 import { Logo } from '../Logo'
 
-export function DesktopHeader({ children }: { children: ReactNode }) {
+export function DesktopHeader({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex w-full text-slate-500 bg-slate-800">
-      <div className="px-10 py-6 w-6/12 md:w-1/6 flex items-center justify-start">
+    <div className="hidden md:flex text-slate-500">
+      <div className="px-10 py-6 flex items-center justify-start">
         <Logo />
       </div>
-      <div className="px-10 py-6 w-6/12 md:w-5/6 flex items-center justify-end text-sm">
+      <div className="px-10 py-6 flex items-center justify-end text-sm md:ml-auto">
         {children}
       </div>
     </div>

@@ -26,19 +26,19 @@ export default function Hamburger() {
       <span
         className={classNames(
           classes.span,
-          'bg-orange-400 rounded-lg h-1 my-1 w-6/12'
+          'bg-blue-500 dark:bg-orange-400 rounded-lg h-1 my-1 w-6/12'
         )}
       ></span>
       <span
         className={classNames(
           classes.span,
-          'bg-orange-400 rounded-lg h-1 my-1 w-full'
+          'bg-blue-500 dark:bg-orange-400 rounded-lg h-1 my-1 w-full'
         )}
       ></span>
       <span
         className={classNames(
           classes.span,
-          'bg-orange-400 rounded-lg h-1 my-1 w-3/4'
+          'bg-blue-500 dark:bg-orange-400 rounded-lg h-1 my-1 w-3/4'
         )}
       ></span>
     </label>
