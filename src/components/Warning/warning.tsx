@@ -12,7 +12,7 @@ export default function Warning({ message }: { message: string }) {
 
     if (process.env.NODE_ENV === 'production') {
       id = toast
-        .warn(message, {
+        .info(message, {
           position: 'top-right',
           autoClose: 5000,
           hideProgressBar: false,

@@ -32,8 +32,9 @@ export default function RootLayout({
       `}</style>
       <html suppressHydrationWarning>
         <head>
+          <title>Paul Opmann</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/logo.svg" />
+          <link rel="icon" href="/logo_light.svg" />
         </head>
         <body className="bg-gray-50 dark:bg-slate-800 font-rubik">
           <Providers>
