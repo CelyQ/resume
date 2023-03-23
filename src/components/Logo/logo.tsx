@@ -7,6 +7,9 @@ export default function Logo() {
       width={42}
       height={42}
       viewBox="0 0 42 42"
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }}
     >
       <g transform="matrix(1,0,0,1,1.7053025658242404e-13,0)">
         <svg
