@@ -8,6 +8,7 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 export function MobileHeader() {
   const { theme, setTheme } = useTheme()
+
   return (
     <>
       <div className="flex md:hidden w-full justify-between items-center top-0 z-30">
