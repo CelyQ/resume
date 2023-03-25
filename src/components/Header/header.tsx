@@ -22,7 +22,7 @@ export default function Header({ children }: { children: ReactNode }) {
         {
           '-top-28': dirrection === 'down',
           'bg-gray-50 dark:bg-slate-800': topOffset > 32,
-          'bg-transparent': isDrawerOpen
+          'bg-transparent dark:bg-transparent': isDrawerOpen
         }
       )}
     >
