@@ -15,7 +15,7 @@ export default function Experience() {
   return (
     <Section
       id="experience"
-      className="py-32 items-center mx-0 max-w-[100%!important] px-[0!important] md:px-[100px!important] w-full"
+      className="py-32 items-center mx-0 max-w-[100%!important] px-[40px!important] md:px-[100px!important] w-full"
     >
       <SectionHeader prefix="02.">Technologies I work with</SectionHeader>
 
@@ -24,7 +24,7 @@ export default function Experience() {
           style={{
             padding: '2.5rem 0'
           }}
-          // autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           mousewheel={{ forceToAxis: true }}
           modules={[Autoplay, Mousewheel]}
           spaceBetween={14.6}
