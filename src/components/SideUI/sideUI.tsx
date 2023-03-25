@@ -3,8 +3,6 @@
 import type { ReactNode } from 'react'
 import classNames from 'classnames'
 
-import classes from './sideUI.module.scss'
-
 export default function SideUI({
   position,
   children
@@ -23,7 +21,11 @@ export default function SideUI({
       )}
     >
       {children}
-      <div className={classNames(classes.line, 'px-1')} />
+      <div
+        className={
+          'px-1 after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-blue-500 after:dark:bg-orange-400 after:gap-y-5 after:mt-8'
+        }
+      />
     </div>
   )
 }
