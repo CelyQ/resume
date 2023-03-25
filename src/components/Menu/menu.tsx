@@ -19,12 +19,12 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
 
   return (
     <div
-      className={classNames({
+      className={classNames('font-khand', {
         'flex flex-col h-full justify-center': vertical
       })}
     >
       <ul
-        className={classNames('flex gap-10 items-center', {
+        className={classNames('flex gap-10 items-center font-semibold', {
           'flex-col': vertical
         })}
       >
@@ -69,7 +69,7 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
 
         <li className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400">
           <a
-            className="inline-block border border-blue-500 dark:border-orange-500 px-3 py-2 rounded-md text-blue-500 dark:text-orange-500 hover:bg-orange-500/5"
+            className="inline-block border border-blue-500 dark:border-orange-500 px-4 py-2 rounded-md text-blue-500 dark:text-orange-500 hover:dark:bg-orange-500/5 hover:bg-blue-500/5 font-bold"
             href="./paul_opmann.pdf"
             download="paul_opmann.pdf"
           >

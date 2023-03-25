@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '~react-toastify/dist/ReactToastify.css';
+@import 'node_modules/react-toastify/dist/ReactToastify.css';
+
+@import 'node_modules/swiper/swiper-bundle.css';
 
 * {
   -webkit-user-drag: none;
@@ -19,7 +21,7 @@ body {
     width: 0.25rem;
 
     &-track {
-      background: #1e293b;
+      background: transparent;
     }
 
     &-thumb {
@@ -36,7 +38,7 @@ html.light {
       width: 0.25rem;
 
       &-track {
-        background: #1e293b;
+        background: transparent;
       }
 
       &-thumb {

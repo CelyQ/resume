@@ -11,7 +11,7 @@ export default function Section({
   className?: string
 }) {
   const classes = classNames(
-    'flex flex-col w-full max-w-7xl px-10 md:px-28 min-h-screen',
+    'flex flex-col w-full min-h-screen max-w-7xl px-10 md:px-28',
     className
   )
 

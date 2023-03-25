@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        khand: ['var(--font-khand)', ...fontFamily.sans],
         rubik: ['var(--font-rubik-bubbles)', ...fontFamily.sans]
       }
     }
