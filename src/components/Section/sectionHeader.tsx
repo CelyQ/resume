@@ -14,7 +14,7 @@ export default function SectionHeader({
   return (
     <h2
       className={classNames(
-        'dark:text-white text-gray-700 text-2xl font-khand font-bold',
+        'text-slate-800 dark:text-gray-300 text-2xl font-khand font-bold',
         'after:top-[6px] after:-right-[20px] after:relative after:block after:w-[300px] after:h-[1px] after:dark:bg-orange-500 after:bg-blue-500',
         className
       )}
