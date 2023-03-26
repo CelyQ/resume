@@ -53,3 +53,21 @@ a[href='mailto:paul.opmann@gmail.com'] {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
 }
+
+html.light {
+  --swiper-navigation-color: white;
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    background: #1e40af;
+  }
+}
+
+html.dark {
+  --swiper-navigation-color: white;
+
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    background: #f97316;
+  }
+}
