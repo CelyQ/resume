@@ -69,7 +69,7 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
         <li className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400">
           <a
             className="inline-block border border-blue-500 dark:border-orange-500 px-4 py-2 rounded-md text-blue-500 dark:text-orange-500 hover:dark:bg-orange-500/5 hover:bg-blue-500/5 font-bold"
-            href="./paul-opmann.pdf"
+            href="./paul-opmann-2023.pdf"
             download="paul-opmann.pdf"
           >
             Resume
