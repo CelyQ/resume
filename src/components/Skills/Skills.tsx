@@ -6,7 +6,7 @@ import { Backend } from '../Technologies/Backend'
 import { Frontend } from '../Technologies/Frontend'
 import { Other } from '../Technologies/Other'
 
-export default function Experience() {
+export function Skills() {
   return (
     <Section id="experience" className="pt-32 items-center max-w-[1790px]">
       <SectionHeader prefix="02.">Technologies I work with</SectionHeader>

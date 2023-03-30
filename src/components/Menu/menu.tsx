@@ -36,10 +36,9 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
         </li>
         <li
           className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400"
-          onClick={() => scrollTo('experience')}
+          onClick={() => scrollTo('skills')}
         >
-          <span className="text-blue-500 dark:text-orange-500">02.</span>{' '}
-          Experience
+          <span className="text-blue-500 dark:text-orange-500">02.</span> Skills
         </li>
         <li
           className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400"
@@ -70,8 +69,8 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
         <li className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400">
           <a
             className="inline-block border border-blue-500 dark:border-orange-500 px-4 py-2 rounded-md text-blue-500 dark:text-orange-500 hover:dark:bg-orange-500/5 hover:bg-blue-500/5 font-bold"
-            href="./paul_opmann.pdf"
-            download="paul_opmann.pdf"
+            href="./paul-opmann.pdf"
+            download="paul-opmann.pdf"
           >
             Resume
           </a>

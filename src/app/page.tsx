@@ -6,7 +6,7 @@ import { SideUI } from '@components/SideUI'
 import { SocialLinks } from '@components/SocialLinks'
 import { Hero } from '@components/Hero'
 import { AboutMe } from '@components/AboutMe'
-import { Experience } from '@components/Experience'
+import { Skills } from '@/src/components/Skills'
 import { Projects } from '@components/Projects'
 import { ContactMe } from '../components/ContactMe'
 import { Footer } from '../components/Footer'
@@ -19,7 +19,7 @@ export default function App() {
       </Header>
       <Hero />
       <AboutMe />
-      <Experience />
+      <Skills />
       <Projects />
       <ContactMe />
       <Footer />
