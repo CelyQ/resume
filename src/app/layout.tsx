@@ -15,14 +15,16 @@ const rubik_bubbles = Rubik_Bubbles({
   weight: '400',
   style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-rubik-bubbles'
+  variable: '--font-rubik-bubbles',
+  preload: true
 })
 
 const khand = Khand({
   display: 'swap',
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-khand'
+  variable: '--font-khand',
+  preload: true
 })
 
 export default function RootLayout({

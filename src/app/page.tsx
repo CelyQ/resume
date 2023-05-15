@@ -7,7 +7,7 @@ import { SocialLinks } from '@components/SocialLinks'
 import { Hero } from '@components/Hero'
 import { AboutMe } from '@components/AboutMe'
 import { Skills } from '@/src/components/Skills'
-import { Projects } from '@components/Projects'
+import { Projects } from '@components/Projects/projects'
 import { ContactMe } from '../components/ContactMe'
 import { Footer } from '../components/Footer'
 
@@ -23,7 +23,6 @@ export default function App() {
       <Projects />
       <ContactMe />
       <Footer />
-
       <Drawer />
       <SideUI position="left">
         <SocialLinks />

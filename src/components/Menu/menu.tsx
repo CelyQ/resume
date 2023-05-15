@@ -8,7 +8,6 @@ import { useTheme } from 'next-themes'
 
 export default function Menu({ vertical }: { vertical?: boolean }) {
   const { theme, setTheme } = useTheme()
-  const { isDesktop } = useLayout()
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id)
@@ -53,18 +52,16 @@ export default function Menu({ vertical }: { vertical?: boolean }) {
           <span className="text-blue-500 dark:text-orange-500">04.</span>{' '}
           Contact
         </li>
-        {isDesktop && (
-          <li
-            className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          >
-            <FontAwesomeIcon
-              icon={theme === 'dark' ? faSun : faMoon}
-              width="20px"
-              style={{ height: '20px' }}
-            />
-          </li>
-        )}
+        <li
+          className="hidden md:block hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          <FontAwesomeIcon
+            icon={theme === 'dark' ? faSun : faMoon}
+            width="20px"
+            style={{ height: '20px' }}
+          />
+        </li>
 
         <li className="hover:cursor-pointer hover:text-blue-500 dark:hover:text-orange-500 text-slate-400">
           <a

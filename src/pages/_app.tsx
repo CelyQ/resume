@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'next-themes'
 
-function MyApp({
+export default function App({
   Component,
   pageProps
 }: {
@@ -13,5 +13,3 @@ function MyApp({
     </ThemeProvider>
   )
 }
-
-export default MyApp
